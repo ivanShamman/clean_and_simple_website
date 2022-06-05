@@ -1,0 +1,46 @@
+.manage{
+  @media (max-width: $breakpoint-desktop-sm) {
+    &__image{
+      margin-right: 0;
+      width: 50%;
+    }
+  }
+  @media (max-width: $breakpoint-laptop-sm) {
+    padding: 100px 0;
+    .row{
+      flex-wrap: wrap;
+    }
+    &__content-wrapper,
+    &__image{
+      width: 100%;
+    }
+    &__image{
+      img{
+        width: 100%;
+      }
+    }
+  }
+  @media (max-width: $breakpoint-mobile) {
+    &__content-wrapper{
+      text-align: center;
+    }
+    &-btn-link{
+      width: 50%;
+      text-align: center;
+    }
+  }
+  @media (max-width: $breakpoint-mobile-sm) {
+    &__content{
+      &-title{
+        font-size: 30px;
+      }
+      &-btn.row{
+        gap: 15px;
+      }
+      &-btn-link{
+        width: 100%;
+        text-align: center;
+      }
+    }
+  }
+}

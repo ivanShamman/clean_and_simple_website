@@ -1,0 +1,19 @@
+.partner{
+  padding: 60px 0;
+  border-top: 1px solid $border-line-color ;
+  border-bottom: 1px solid $border-line-color;
+  &__list{
+    gap: 25px;
+    &-item{
+      svg path{
+        fill: #D6DAE5;
+      }
+      &:hover{
+        svg path{
+          fill: #5982E7;
+          transition: $btn-transition;
+        }
+      }
+    }
+  }
+}

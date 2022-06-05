@@ -1,0 +1,7 @@
+.banner{
+  @media (max-height: $breakpoint-mobile-sm-height ) {
+    &__wrapper{
+      padding-top: 12px;
+    }
+  }
+}

@@ -1,0 +1,8 @@
+.partner{
+  @media (max-width: $breakpoint-tablet) {
+    &__list{
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+  }
+}

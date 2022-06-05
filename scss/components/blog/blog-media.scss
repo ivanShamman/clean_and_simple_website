@@ -1,0 +1,67 @@
+.blog{
+  @media (max-width: $breakpoint-desktop-sm) {
+    &__content-img{
+      flex-wrap: wrap;
+      width: 40%;
+      &-sec{
+        flex-direction: row;
+      }
+    }
+  }
+  @media (max-width: $breakpoint-laptop) {
+    .hidden-in-tablet{
+      display: none;
+    }
+  }
+  @media (max-width: $breakpoint-tablet) {
+    &__content{
+      &-wrapper{
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+      &-description{
+        width: 100%;
+      }
+      &-img,
+      &-img-main,
+      &-img-sec{
+        width: 100%;
+        & img{
+          width: 100%;
+        }
+      }
+    }
+  }
+  @media (max-width: $breakpoint-mobile) {
+    &__content{
+      &-description{
+        text-align: center;
+      }
+      &-btn{
+        flex-wrap: wrap;
+        gap: 25px;
+        a{
+          width: 100%;
+        }
+        a:last-child{
+          font-weight: 700;
+          font-size: 13px;
+          color: #3A79FF;
+          padding: 11px 14px;
+          border: 2px solid $header-btn-color;
+          border-radius: 2px;
+          background: $header-btn-color;
+          &:hover{
+            background-color: inherit;
+            transition: $btn-transition;
+          }
+        }
+      }
+    }
+  }
+  @media (max-width: $breakpoint-mobile-sm) {
+    &__content-block{
+      padding: 0;
+    }
+  }
+}

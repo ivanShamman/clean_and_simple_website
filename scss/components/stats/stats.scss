@@ -1,0 +1,59 @@
+.stats{
+  overflow-x: hidden;
+  &__col{
+    &-left{
+      position: relative;
+      padding: 70px 90px 66px 0;
+      text-align: right;
+      background: #6888FF;
+      color: $white-color;
+      &:before{
+
+        position: absolute;
+        content: "";
+        top: 0;
+        right: 100%;
+        width: 100vw;
+        height: 100%;
+        background: #6888FF;
+      }
+      &-img{
+        margin-bottom: 24px;
+      }
+      &-title{
+        font-weight: 400;
+        font-size: 48px;
+        margin-bottom: 25px;
+      }
+    }
+    &-right{
+      position: relative;
+      padding: 70px 0 66px 90px;
+      background: #E9EFFF;
+      color: #5E80FF;
+      &:after{
+        position: absolute;
+        content: "";
+        top: 0;
+        left: 100%;
+        width: 100vw;
+        height: 100%;
+        background: #E9EFFF;
+      }
+      &-img{
+        margin-bottom: 24px;
+      }
+      &-title{
+        font-weight: 400;
+        font-size: 48px;
+        margin-bottom: 25px;
+      }
+    }
+    &-right-description,
+    &-left-description{
+      max-width: 240px;
+      font-weight: 500;
+      font-size: 18px;
+    }
+  }
+}

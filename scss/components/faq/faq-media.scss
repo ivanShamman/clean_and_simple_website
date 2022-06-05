@@ -1,0 +1,17 @@
+.faq{
+  @media (max-width: $breakpoint-tablet) {
+    &__question-list{
+      width: 100%;
+    }
+  }
+  @media (max-width: $breakpoint-mobile-lg) {
+    &__question-answer{
+      flex-wrap: wrap;
+      gap: 25px;
+      p,
+      &-btn {
+        width: 100%;
+      }
+    }
+  }
+}

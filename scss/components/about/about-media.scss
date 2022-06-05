@@ -1,0 +1,30 @@
+.about{
+  @media (max-width: $breakpoint-tablet) {
+  & .d-flex{
+    flex-wrap: wrap;
+    gap: 70px 40px;
+  }
+    &__item{
+      width: 45%;
+      &:not(:last-child):before{
+        display: none;
+      }
+    }
+  }
+  @media (max-width: $breakpoint-mobile) {
+    &__item{
+      width: 80%;
+    }
+    &__btn.row{
+      flex-wrap: wrap;
+    }
+    &__btn{
+      &-left,
+      &-right{
+        display: block;
+        width: 100%;
+        text-align: center;
+      }
+    }
+  }
+}

@@ -1,0 +1,30 @@
+.news{
+  @media (max-width: $breakpoint-tablet) {
+    & .row{
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    &__content{
+      text-align: center;
+    }
+    &__form{
+      width: 80%;
+    }
+  }
+  @media (max-width: $breakpoint-mobile) {
+    &__form{
+      flex-wrap: wrap;
+      label{
+        width: 100%;
+      }
+      &-btn{
+        width: 100%;
+        padding: 22px 0;
+      }
+    }
+    &__form,
+    &__content{
+      width: 100%;
+    }
+  }
+}

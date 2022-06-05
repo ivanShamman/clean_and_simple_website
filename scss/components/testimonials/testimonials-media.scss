@@ -1,0 +1,30 @@
+.testimonials{
+  @media (max-width: $breakpoint-laptop-sm) {
+    &__title{
+      font-size: 32px;
+    }
+  }
+  @media (max-width: $breakpoint-tablet) {
+    & .row{
+      flex-wrap: wrap;
+      gap: 65px;
+    }
+    &__description-col{
+      text-align: center;
+    }
+    &__commentary-col{
+      width: 70%;
+      margin: 0 auto;
+      text-align: center;
+    }
+  }
+  @media (max-width: $breakpoint-mobile) {
+    &__title{
+      font-size: 28px;
+    }
+    &__commentary-col{
+      width: 100%;
+
+    }
+  }
+}

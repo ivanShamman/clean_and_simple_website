@@ -1,0 +1,101 @@
+.about{
+  position: relative;
+  &:before{
+    @extend %bg-default;
+    content: "";
+    background-image: url("../assets/about-clouds.svg");
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+  }
+  &__wrapper{
+    position: relative;
+    padding-top: 12vh;
+    z-index: 1;
+    gap: 92px;
+  }
+  &__title-wrapper{
+    text-align: center;
+    color: $dark-blue-color;
+    font-weight: 500;
+    font-size: 24px;
+    h3{
+      font-family: $secondary-font-family;
+      font-size: $subtitle-size;
+      font-weight: 500;
+      letter-spacing: 0.1em;
+      margin-bottom: 20px;
+    }
+    h2{
+      font-size: $title-sm-size;
+      font-weight: 500;
+    }
+  }
+  &__item{
+    position: relative;
+    width:20%;
+    font-family: $additional-font-family;
+    text-align: center;
+    gap: 25px;
+    &:not(:last-child):before{
+      content: "";
+      position: absolute;
+      width: 28px;
+      top: 50%;
+      right: -32px;
+      border-bottom: 1px solid #DAE4FE;
+    }
+    &-title{
+      font-weight: 700;
+      font-size: 14px;
+      color: #4074F8;
+    }
+    &-description{
+      font-weight: 600;
+      font-size: 11px;
+      color: #ADB3CB;
+      line-height: 19px;
+      letter-spacing: 0.08em;
+    }
+  }
+  &__btn{
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 16px;
+    margin-bottom: 60px;
+    gap: 16px;
+    &-text{
+      font-family:$additional-font-family;
+      font-weight: 600;
+      font-size: 11px;
+      line-height: 19px;
+      text-transform: uppercase;
+      color: #ADB3CB;
+    }
+    &-left{
+      background-color: $red-btn-color;
+      color: #D43F3F;
+      padding: 11px 14px;
+      border: 2px solid $red-btn-color;
+      border-radius: 2px;
+    }
+    &-right{
+      background-color: $header-btn-color;
+      color: #3A79FF;
+      padding: 11px 14px;
+      border: 2px solid $header-btn-color;
+      border-radius: 2px;
+    }
+    &-right,
+    &-left{
+      &:hover{
+        background-color: inherit;
+        transition: $btn-transition;
+      }
+    }
+  }
+}

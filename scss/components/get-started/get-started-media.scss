@@ -1,0 +1,16 @@
+.get-started{
+  @media (max-width: $breakpoint-mobile) {
+    &__content{
+      &-title{
+        font-size: 38px;
+      }
+      &-btn{
+        flex-wrap: wrap;
+        gap: 25px;
+        a{
+          width: 100%;
+        }
+      }
+    }
+  }
+}

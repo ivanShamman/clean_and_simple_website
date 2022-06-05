@@ -1,0 +1,21 @@
+.stats{
+  @media (max-width: $breakpoint-tablet) {
+    & .content-container{
+      padding: 0;
+    }
+    & .row{
+      flex-wrap: wrap;
+    }
+
+    &__col-left,
+    &__col-right{
+      width: 100%;
+      padding: 50px 0;
+      text-align: center;
+    }
+    &__col-right-description,
+    &__col-left-description{
+      margin: 0 auto;
+  }
+  }
+}
