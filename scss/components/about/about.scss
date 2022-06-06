@@ -1,5 +1,6 @@
 .about{
   position: relative;
+  padding: 12vh 0 60px;
   &:before{
     @extend %bg-default;
     content: "";
@@ -14,7 +15,6 @@
   }
   &__wrapper{
     position: relative;
-    padding-top: 12vh;
     z-index: 1;
     gap: 92px;
   }
@@ -66,7 +66,6 @@
     font-weight: 700;
     font-size: 13px;
     line-height: 16px;
-    margin-bottom: 60px;
     gap: 16px;
     &-text{
       font-family:$additional-font-family;
